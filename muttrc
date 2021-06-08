@@ -41,7 +41,7 @@ set spoolfile             = "+INBOX"
 set record                = "+[Gmail]/Sent Mail"
 set postponed             = "+[Gmail]/Drafts"
 set trash                 = "+Trash"
-mailboxes                 = INBOX =[Gmail]/Sent\ Mail =[Gmail]/Drafts =[Gmail]/Spam =[Gmail]/Trash
+mailboxes                 =INBOX =[Gmail]/Sent\ Mail =[Gmail]/Drafts =[Gmail]/Spam =[Gmail]/Trash
 
 #: HTML open Mail
 set allow_ansi            = yes
