@@ -1,0 +1,56 @@
+#: input
+set imap_user             = "USER@gmail.com"
+set folder                = "imaps://imap.gmail.com:993"
+set imap_pass             = "TOKEN"
+
+#: output
+set smtp_url              = "smtps://USER@gmail.com@smtp.gmail.com:465"
+set smtp_authenticators   = "gssapi:login"
+set smtp_pass             = "TOKEN"
+
+#: others
+set ssl_starttls          = yes
+set ssl_force_tls         = yes
+set mail_check            = 120
+set timeout               = 300
+set imap_keepalive        = 300
+set sidebar_visible
+set sidebar_folder_indent = yes
+set sidebar_indent_string = '  '
+set sidebar_format        = '%B%?F? [%F]?%* %?N?%N/?%S'
+# set sort                  = reverse-date
+set editor                = neovim
+set sort                  = 'threads'
+set sort_aux              = 'reverse-last-date-received'
+set index_format          = '%4C  %10d  %-15.15L  (%?l?%4l&%4c?)  %s'
+set date_format           = '%Y-%m-%d'
+set auto_tag              = yes
+set mime_forward          = yes
+set include
+set uncollapse_new        = yes
+set uncollapse_jump       = yes
+set collapse_unread       = no
+unset markers                                                                                                                                                                                                                            
+set query_command         = "notmuch-address %s"
+set recall                = no
+
+#: Rutes
+set from                  = "USER@gmail.com"
+set realname              = "NAME LASTNAME"
+set spoolfile             = "+INBOX"
+set record                = "+[Gmail]/Sent Mail"
+set postponed             = "+[Gmail]/Drafts"
+set trash                 = "+Trash"
+mailboxes                 = INBOX =[Gmail]/Sent\ Mail =[Gmail]/Drafts =[Gmail]/Spam =[Gmail]/Trash
+
+#: HTML open Mail
+set allow_ansi            = yes
+auto_view text/html
+alternative_order text/enriched text/plain text/html text
+set mailcap_path          = ~/.config/mutt/mailcap
+
+#: Colors
+source ./colors.muttrc
+
+#: ShortCode
+source ./shortcode.muttrc
