@@ -1,0 +1,7 @@
+#: input
+set imap_user             = "USER@gmail.com"
+set imap_pass             = "TOKEN"
+set smtp_url              = "smtps://USER@gmail.com@smtp.gmail.com:465"
+set smtp_pass             = "TOKEN"
+set from                  = "USER@gmail.com"
+set realname              = "NAME LASTNAME"

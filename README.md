@@ -1,0 +1,4 @@
+# Dependencieas
+
+elinks
+python-pdftotext
