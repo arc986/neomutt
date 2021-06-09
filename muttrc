@@ -26,6 +26,7 @@ set strict_threads        = yes
 set sort_aux              = reverse-last-date-received
 set reverse_name          = yes
 set reverse_realname      = yes
+set sort_re
 # set wait_key              = no
 # set delete                = yes
 
@@ -41,9 +42,9 @@ set sidebar_next_new_wrap = yes
 set mail_check_stats
 
 # Status Bar
-set status_chars          = " *%A"
-set status_format         = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
-set editor                = "neovim -c 'set syntax=mail ft=mail enc=utf-8'"
+# set status_chars          = " *%A"
+# set status_format         = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+set editor                = "vim -c 'set syntax=mail ft=mail enc=utf-8'"
 set menu_scroll           = yes
 
 set index_format          = '%6C %10d %[%I:%M %p] %-40.40F  (%5c)  %s'
@@ -58,7 +59,7 @@ set uncollapse_new        = yes
 set uncollapse_jump       = yes
 set collapse_unread       = no
 unset markers                                                                                                                                                                                                                            
-set recall                = no
+set mark_old              = no
 
 #: Rutes
 set spoolfile             = "+INBOX"
