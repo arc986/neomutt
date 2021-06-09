@@ -47,8 +47,8 @@ set mail_check_stats
 set editor                = "vim -c 'set syntax=mail ft=mail enc=utf-8'"
 set menu_scroll           = yes
 
-set index_format          = '%6C %10d %[%I:%M %p] %-40.40F  (%5c)  %s'
-set date_format           = '%Y-%m-%d'
+set index_format          = '%3C| %5c | %10d | %Z%-40.40F| %s'
+set date_format           = '%Y-%m-%d %I:%M %p'
 set auto_tag              = yes
 set mime_forward          = yes
 ignore *
