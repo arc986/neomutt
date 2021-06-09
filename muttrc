@@ -1,7 +1,7 @@
 set send_charset = "utf-8"
 
 #: gpg
-source ./gpg.rc
+source ./config/gpg.rc
 #: Account
 source "gpg -dq $HOME/.config/mutt/account.gpg |"
 
@@ -79,4 +79,4 @@ source ./config/colors.muttrc
 source ./config/shortcode.muttrc
 
 #:Signature
-set signature = "./signature"
+set signature = "./config/signature"
