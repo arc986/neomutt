@@ -1,7 +1,9 @@
 set send_charset = "utf-8"
 
+#: gpg
+source ./gpg.rc
 #: Account
-source ./account.muttrc
+source "gpg -dq $HOME/.config/mutt/account.gpg |"
 
 #: input
 set folder                = "imaps://imap.gmail.com:993"
@@ -68,13 +70,13 @@ set spoolfile             = "+INBOX"
 set allow_ansi            = yes
 auto_view text/html text/calendar application/ics
 alternative_order text/enriched text/plain text/html text
-set mailcap_path          = ~/.config/mutt/mailcap
+set mailcap_path          = ./config/mailcap
 
 #: Colors
-source ./colors.muttrc
+source ./config/colors.muttrc
 
 #: ShortCode
-source ./shortcode.muttrc
+source ./config/shortcode.muttrc
 
 #:Signature
 set signature = "./signature"
