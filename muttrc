@@ -22,6 +22,7 @@ set ssl_force_tls         = yes
 set timeout               = 300
 # set mbox_type             = Maildir
 set sort                  = threads
+set strict_threads        = yes
 set sort_aux              = reverse-last-date-received
 set reverse_name          = yes
 set reverse_realname      = yes
@@ -42,12 +43,10 @@ set mail_check_stats
 # Status Bar
 set status_chars          = " *%A"
 set status_format         = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+set editor                = "neovim -c 'set syntax=mail ft=mail enc=utf-8'"
+set menu_scroll           = yes
 
-# set sort                  = reverse-date
-set editor = "neovim -c 'set syntax=mail ft=mail enc=utf-8'"
-set menu_scroll = "yes"
-
-set index_format          = '%4C  %10d  %-15.15L  (%?l?%4l&%4c?)  %s'
+set index_format          = '%6C %10d %[%I:%M %p] %-40.40F  (%5c)  %s'
 set date_format           = '%Y-%m-%d'
 set auto_tag              = yes
 set mime_forward          = yes
@@ -55,11 +54,10 @@ ignore *
 unignore From To Cc Bcc Date Subject
 unhdr_order *
 hdr_order From: To: Cc: Bcc: Date: Subject:
-# set uncollapse_new        = yes
-# set uncollapse_jump       = yes
-# set collapse_unread       = no
-# unset markers                                                                                                                                                                                                                            
-# set query_command         = "notmuch-address %s"
+set uncollapse_new        = yes
+set uncollapse_jump       = yes
+set collapse_unread       = no
+unset markers                                                                                                                                                                                                                            
 set recall                = no
 
 #: Rutes
