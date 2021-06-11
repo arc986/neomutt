@@ -70,7 +70,7 @@ set spoolfile             = "+INBOX"
 set allow_ansi            = yes
 auto_view text/html text/calendar application/ics
 alternative_order text/enriched text/plain text/html text
-set mailcap_path          = ./config/mailcap
+set mailcap_path          =config/mailcap
 
 #: Colors
 source ./config/colors.muttrc
